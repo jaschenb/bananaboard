@@ -1,5 +1,9 @@
 #include "bananaboard.dtsi"
 
+&default_transform {
+    col-offset = <16>;
+};
+
 &kscan0 {
     input-gpios
         = <&pro_micro 18 GPIO_ACTIVE_HIGH>
