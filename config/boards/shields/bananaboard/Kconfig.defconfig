@@ -4,7 +4,6 @@ config ZMK_KEYBOARD_NAME
     default "Bananaboard"
 
 config ZMK_SPLIT_ROLE_CENTRAL
-    bool
     default y
 
 endif
@@ -12,7 +11,6 @@ endif
 if SHIELD_BANANABOARD_LEFT || SHIELD_BANANABOARD_RIGHT
 
 config ZMK_SPLIT
-    bool
     default y
 
 endif
