@@ -1,7 +1,7 @@
 #include "bananaboard.dtsi"
 
 &kscan0 {
-    col-gpios
+    input-gpios
         = <&pro_micro 0 GPIO_ACTIVE_HIGH>
         , <&pro_micro 2 GPIO_ACTIVE_HIGH>
         , <&pro_micro 1 GPIO_ACTIVE_HIGH>
