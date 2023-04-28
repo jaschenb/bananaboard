@@ -9,7 +9,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        alpha1 {
+        engram {
             bindings = <
             &kp B  &kp Y  &kp O  &kp U  &kp SEMI    &kp Z  &kp L  &kp D  &kp W  &kp V
             &kp C  &kp I  &kp E  &kp A  &kp DOT    &kp Q  &kp H  &kp T  &kp S  &kp N
@@ -17,6 +17,7 @@
             &sys_reset &sys_reset
             >;
         };
+    };
 };
 
 
