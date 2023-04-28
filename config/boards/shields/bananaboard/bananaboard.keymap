@@ -5,12 +5,21 @@
 #define ENG 0
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         engram {
             bindings = <
-            &kp B  &kp Y  &kp O  &kp U  &kp LT    &kp Z  &kp L  &kp D  &kp W  &kp V
+            &kp B  &kp Y  &kp O  &kp U  &kp SEMI    &kp Z  &kp L  &kp D  &kp W  &kp V
             &kp C  &kp I  &kp E  &kp A  &kp SLASH    &kp Q  &kp H  &kp T  &kp S  &kp N
             &kp G  &kp X  &kp J  &kp K  &bootloader    &bootloader  &kp R  &kp M  &kp F  &kp P
             &kp SPC &kp TAB
