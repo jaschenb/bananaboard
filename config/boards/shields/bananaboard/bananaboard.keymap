@@ -5,15 +5,6 @@
 #define ENG 0
 
 / {
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
