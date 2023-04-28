@@ -15,7 +15,7 @@
             &kp B  &kp Y  &kp O  &kp U  &kp SEMI    &kp Z  &kp L  &kp D  &kp W  &kp V
             &kp C  &kp I  &kp E  &kp A  &kp DOT    &kp Q  &kp H  &kp T  &kp S  &kp N
             &kp G  &kp X  &kp J  &kp K  &bootloader    &bootloader  &kp R  &kp M  &kp F  &kp P
-            &sys_reset &sys_reset
+            &kp SPC &kp TAB
             >;
         };
     };
