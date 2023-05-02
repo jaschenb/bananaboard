@@ -1,5 +1,4 @@
 #include <behaviors.dtsi>
-
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
@@ -44,12 +43,10 @@
             bindings = <
             &none  &kp BSPC  &kp UP  &kp DEL  &kp PG_UP           &kp C_BRI_UP  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &none
             &none  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN       &kp C_BRI_DN  &kp C_PREV  &kp C_NEXT  &kp C_PP  &none
-            &none  &kp CAPS  &kp HOME  &kp END  &kp RET           &trans  &bt BT_SEL 1  &bt BT_SEL 2  &kp BT_SEL 3  &bt BT_SEL 4
+            &none  &kp CAPS  &kp HOME  &kp END  &kp RET           &trans  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
             &trans                                                         &bt BT_CLR
             >;
         };
 
     };
 };
-
-
