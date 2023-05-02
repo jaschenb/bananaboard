@@ -6,7 +6,7 @@ manifest:
       url-base: https://github.com/jaschenb
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: jaschenb
       revision: mouse-3.2
       import: app/west.yml
   self:
