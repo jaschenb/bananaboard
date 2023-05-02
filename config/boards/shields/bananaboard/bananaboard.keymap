@@ -15,19 +15,19 @@
 
         engram {
             bindings = <
-            &kp B  &kp Y  &kp O  &kp U  &kp SEMI    &kp Z  &kp L  &kp D  &kp W  &kp V
-            &kp C  &kp I  &kp E  &kp A  &kp FSLH    &kp Q  &kp H  &kp T  &kp S  &kp N
-            &kp G  &kp X  &kp J  &kp K  &kp SPC    &kp DOT  &kp R  &kp M  &kp F  &kp P
-            &kp TAB                                    &kp COMMA
+            &kp B  &kp Y  &kp O  &kp U  &kp SEMI             &kp Z  &kp L  &kp D  &kp W  &kp V
+            &kp C  &kp I  &kp E  &kp A  &kp FSLH             &kp Q  &kp H  &kp T  &kp S  &kp N
+            &kp G  &kp X  &kp J  &kp K  &lt SYM SPC          &lt SYS DOT  &kp R  &kp M  &kp F  &kp P
+            &lt NUM TAB                                      &kp COMMA
             >;
         };
 
         symbols {
             bindings = <
-            &none  &kp HASH  &kp LBKT  &kp RBKT  &kp AT    &kp EXCL  &kp LT  &kp GT  &kp MINUS  &none
+            &none  &kp HASH  &kp LBKT  &kp RBKT  &kp AT        &kp EXCL  &kp LT  &kp GT  &kp MINUS  &none
             &kp DQT  &kp SQT  &kp LPAR  &kp RPAR  &kp COLON    &kp STAR  &kp LBRC  &kp RBRC  &kp PLUS  &kp TILDE
-            &none  &kp DLLR  &kp PIPE  &kp BSLH  &trans    &kp EQUAL  &kp PRCNT  &kp AMPS  &kp CARET  &none
-            &trans                                          &kp UNDER
+            &none  &kp DLLR  &kp PIPE  &kp BSLH  &trans        &kp EQUAL  &kp PRCNT  &kp AMPS  &kp CARET  &none
+            &trans                                             &kp UNDER
             >;
         };
 
