@@ -25,10 +25,10 @@
 
         symbols {
             bindings = <
-            &kp NO  &kp HASH  &kp LBKT  &kp RBKT  &kp AT    &kp EXCL  &kp LT  &kp GT  &kp MINUS  &kp NO
+            &none  &kp HASH  &kp LBKT  &kp RBKT  &kp AT    &kp EXCL  &kp LT  &kp GT  &kp MINUS  &none
             &kp DQT  &kp SQT  &kp LPAR  &kp RPAR  &kp COLON    &kp STAR  &kp LBRC  &kp RBRC  &kp PLUS  &kp TILDE
-            &kp NO  &kp DLLR  &kp PIPE  &kp BSLH  &kp TRANS    &kp EQUAL  &kp PRCNT  &kp AMPS  &kp CARET  &kp NO
-            &kp TRANS                                          &kp UNDER
+            &none  &kp DLLR  &kp PIPE  &kp BSLH  &trans    &kp EQUAL  &kp PRCNT  &kp AMPS  &kp CARET  &none
+            &trans                                          &kp UNDER
             >;
         };
 
@@ -36,26 +36,26 @@
             bindings = <
             &kp F13  &kp F11  &kp FSLSH  &kp STAR  &kp N9                 &kp N8  &kp PLUS  &kp MINUS  &kp F12  &kp F14
             &kp N7  &kp N5  &kp N3  &kp N1  &kp SLASH              &kp F8  &kp N0  &kp N2  &kp N4  &kp N6
-            &kp F7  &kp F5  &kp F3  &kp F1  &kp TRANS                    &kp EQUAL  &kp F10  &kp F2  &kp F4 &kp F6
-            &kp TRANS                                                &kp F15
+            &kp F7  &kp F5  &kp F3  &kp F1  &trans                    &kp EQUAL  &kp F10  &kp F2  &kp F4 &kp F6
+            &trans                                                &kp F15
             >;
         };
 
         system {
             bindings = <
-            &kp NO  &kp BSPC  &kp UP  &kp DEL  &kp PG_UP           &kp C_BRI_UP  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &kp NO
-            &kp NO  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN       &kp C_BRI_DN  &kp C_PREV  &kp C_NEXT  &kp C_PP  &kp NO
-            &kp NO  &kp CAPS  &kp HOME  &kp END  &kp RET           &kp TRANS  &bt BT_SEL 1  &bt BT_SEL 2  &kp BT_SEL 3  &bt BT_SEL 4
-            &kp TRANS                                                         &bt BT_CLR
+            &none  &kp BSPC  &kp UP  &kp DEL  &kp PG_UP           &kp C_BRI_UP  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &none
+            &none  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN       &kp C_BRI_DN  &kp C_PREV  &kp C_NEXT  &kp C_PP  &none
+            &none  &kp CAPS  &kp HOME  &kp END  &kp RET           &trans  &bt BT_SEL 1  &bt BT_SEL 2  &kp BT_SEL 3  &bt BT_SEL 4
+            &trans                                                         &bt BT_CLR
             >;
         };
 
         mouse1 {
             bindings = <
-            &kp NO  &kp NO  &mkp MOVE_UP  &kp NO  &kp NO                       &kp NO  &kp NO  &mkp SCROLL_UP  &kp NO  &kp NO
-            &kp NO  &mkp MOVE_LEFT  &mkp MOVE_DOWN  &mkp MOVE_RIGHT  &kp NO    &kp NO  &mkp SCROLL_LEFT  &mkp SCROLL_DOWN  &mkp SCROLL_RIGHT  &kp NO
-            &kp NO  &kp NO  &kp NO  &kp NO  &mkp RCLK                          &kp TRANS &kp NO  &kp NO  &kp NO  &kp NO
-            &mkp LCLK                                                          &kp TRANS
+            &none  &none  &mkp MOVE_UP  &none  &none                       &none  &none  &mkp SCROLL_UP  &none  &none
+            &none  &mkp MOVE_LEFT  &mkp MOVE_DOWN  &mkp MOVE_RIGHT  &none    &none  &mkp SCROLL_LEFT  &mkp SCROLL_DOWN  &mkp SCROLL_RIGHT  &none
+            &none  &none  &none  &none  &mkp RCLK                          &trans &none  &none  &none  &none
+            &mkp LCLK                                                          &trans
             >;
         };
 
