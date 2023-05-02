@@ -5,6 +5,10 @@
 #include <dt-bindings/zmk/mouse.h>
 
 #define ENG 0
+#define SYM 1
+#define NUM 2
+#define SYS 3
+#define MOU 4
 
 / {
     keymap {
