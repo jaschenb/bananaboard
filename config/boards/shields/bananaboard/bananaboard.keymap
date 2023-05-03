@@ -10,13 +10,36 @@
 #define MOU 4
 
 / {
+
+    behaviors {
+        bhm: balanced_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+
+        blt: balanced_layer_toggle {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TOGGLE";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         engram {
             bindings = <
             &kp B  &kp Y  &kp O  &kp U  &kp SEMI             &kp Z  &kp L  &kp D  &kp W  &kp V
-            &kp C  &kp I  &kp E  &kp A  &kp FSLH             &kp Q  &kp H  &kp T  &kp S  &kp N
+            &bhm LSHIFT C  &bhm LALT I  &bhm LCTRL E  &bhm LGUI A  &kp FSLH    &kp Q  &bhm RGUI H  &bhm RCTRL T  &bhm RALT S  &bhm RSHIFT N
             &kp G  &kp X  &kp J  &kp K  &lt SYM SPC          &lt SYS DOT  &kp R  &kp M  &kp F  &kp P
             &lt NUM TAB                                      &kp COMMA
             >;
