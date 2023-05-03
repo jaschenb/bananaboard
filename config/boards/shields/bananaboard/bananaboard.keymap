@@ -48,7 +48,7 @@
         symbols {
             bindings = <
             &none  &kp HASH  &kp LBKT  &kp RBKT  &kp AT        &kp EXCL  &kp LT  &kp GT  &kp MINUS  &none
-            &bhm LSHIFT DQT  &bhm LALT SQT  &bhm LCTRL LPAR  &CHM LGUI RPAR  &kp COLON    &kp STAR  &bhm RGUI LBRC  &bhm RCTRL RBRC  &bhm RALT PLUS  &bhm RSHIFT TILDE
+            &bhm LSHIFT DQT  &bhm LALT SQT  &bhm LCTRL LPAR  &bhm LGUI RPAR  &kp COLON    &kp STAR  &bhm RGUI LBRC  &bhm RCTRL RBRC  &bhm RALT PLUS  &bhm RSHIFT TILDE
             &none  &kp DLLR  &kp PIPE  &kp BSLH  &trans        &kp EQUAL  &kp PRCNT  &kp AMPS  &kp CARET  &none
             &trans                                             &kp UNDER
             >;
@@ -57,7 +57,7 @@
         numbers {
             bindings = <
             &kp F13  &kp F11  &kp FSLH  &kp STAR  &kp N9                 &kp N8  &kp PLUS  &kp MINUS  &kp F12  &kp F14
-            &kp N7  &kp N5  &kp N3  &kp N1  &kp SLASH              &kp F8  &kp N0  &kp N2  &kp N4  &kp N6
+            &bhm LSHIFT N7  &bhm LALT N5  &bhm LCTRL N3  &bhm LGUI N1  &kp SLASH    &kp F8  &bhm RGUI N0  &bhm RCTRL N2  &bhm RALT N4  &bhm RSHIFT N6
             &kp F7  &kp F5  &kp F3  &kp F1  &trans                    &kp EQUAL  &kp F10  &kp F2  &kp F4 &kp F6
             &trans                                                &kp F15
             >;
