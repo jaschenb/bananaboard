@@ -7,7 +7,9 @@
 #define SYM 1
 #define NUM 2
 #define SYS 3
-#define MOU 4
+#define MOU1 4
+#define MOU2 5
+#define MOU3 6
 
 / {
 
@@ -66,7 +68,7 @@
         system {
             bindings = <
             &none  &kp BSPC  &kp UP  &kp DEL  &kp PG_UP           &kp C_BRI_UP  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &none
-            &none  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN       &kp C_BRI_DN  &kp C_PREV  &kp C_NEXT  &kp C_PP  &none
+            &none  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN       &kp C_BRI_DN  &kp C_PREV  &kp C_NEXT  &kp C_PP  &to MOU1
             &none  &kp CAPS  &kp HOME  &kp END  &kp RET           &trans  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
             &trans                                                         &bt BT_CLR
             >;
@@ -74,7 +76,7 @@
 
         mouse1 {
             bindings = <
-            &none  &none  &mmv MOVE_UP  &none  &none                         &none  &mwh SCROLL_UP   &none  &none  &none
+            &none  &none  &mmv MOVE_UP  &none  &none                         &none  &none  &mwh SCROLL_UP  &none  &none
             &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none    &none  &mwh SCROLL_LEFT  &mwh SCROLL_DOWN  &mwh SCROLL_RIGHT  &none
             &none  &none  &none  &none  &mkp LCLK                            &none  &none  &none  &none  &none
             &mkp RCLK                                                        &none
