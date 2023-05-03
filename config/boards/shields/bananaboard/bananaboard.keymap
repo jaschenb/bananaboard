@@ -67,8 +67,8 @@
 
         system {
             bindings = <
-            &none  &kp BSPC  &kp UP  &kp DEL  &kp PG_UP           &kp C_BRI_UP  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &none
-            &none  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN       &kp C_BRI_DN  &kp C_PREV  &kp C_NEXT  &kp C_PP  &to MOU1
+            &to ENG  &kp BSPC  &kp UP  &kp DEL  &kp PG_UP           &kp C_BRI_UP  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &to MOU1
+            &none  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN       &kp C_BRI_DN  &kp C_PREV  &kp C_NEXT  &kp C_PP  &none
             &none  &kp CAPS  &kp HOME  &kp END  &kp RET           &none  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
             &none                                                &bt BT_CLR
             >;
@@ -78,7 +78,7 @@
             bindings = <
             &none  &none  &mmv MOVE_VERT(-200)  &none  &none                         &none  &none  &mwh MOVE_VERT(-10)  &none  &none
             &none  &mmv MOVE_HOR(-200)  &mmv MOVE_VERT(200)  &mmv MOVE_HOR(200)  &none    &none  &mwh MOVE_HOR(-10)  &mwh MOVE_VERT(10)  &mwh MOVE_HOR(10)  &none
-            &none  &none  &none  &none  &mkp LCLK                            &none  &none  &none  &none  &none
+            &none  &none  &none  &none  &mkp LCLK                            &mo SYS  &none  &none  &none  &none
             &mkp RCLK                                                        &none
             >;
         };
