@@ -13,9 +13,11 @@
 
 &mmv {
     acceleration-exponent = <0>;
+    delay-before-movement-ms = <0>;
 };
 &mwh {
     acceleration-exponent = <0>;
+    delay-before-movement-ms = <0>;
 };
 
 / {
