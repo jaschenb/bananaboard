@@ -13,12 +13,22 @@
 
 / {
 
+// 0  1  2  3  4
+// 5  6  7  8  9
+// 10 11 12 13 14
+//          15
+// 16 17 18 19 20
+// 21 22 23 24 25
+// 26 27 28 29 30
+//    31
+
         combos {
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
+            key-positions = <5 25>;
+            bindings = <&to MOU3>;
+            layers = <MOU1 MOU2 MOU3>;
         };
     };
 
@@ -49,64 +59,92 @@
 
         engram {
             bindings = <
-            &kp B  &kp Y  &kp O  &kp U  &kp SEMI             &kp Z  &kp L  &kp D  &kp W  &kp V
-            &bhm LSHIFT C  &bhm LALT I  &bhm LCTRL E  &bhm LGUI A  &kp FSLH    &kp Q  &bhm RGUI H  &bhm RCTRL T  &bhm RALT S  &bhm RSHIFT N
-            &kp G  &kp X  &kp J  &kp K  &blt SYM SPC          &blt SYS DOT  &kp R  &kp M  &kp F  &kp P
-            &blt NUM TAB                                      &kp COMMA
+            &kp B  &kp Y  &kp O  &kp U  &kp SEMI
+            &bhm LSHIFT C  &bhm LALT I  &bhm LCTRL E  &bhm LGUI A  &kp FSLH
+            &kp G  &kp X  &kp J  &kp K  &blt SYM SPC
+            &blt NUM TAB
+            &kp Z  &kp L  &kp D  &kp W  &kp V
+            &kp Q  &bhm RGUI H  &bhm RCTRL T  &bhm RALT S  &bhm RSHIFT N
+            &blt SYS DOT  &kp R  &kp M  &kp F  &kp P
+            &kp COMMA
             >;
         };
 
         symbols {
             bindings = <
-            &none  &kp HASH  &kp LBKT  &kp RBKT  &kp AT        &kp EXCL  &kp LT  &kp GT  &kp MINUS  &none
-            &bhm LSHIFT DQT  &bhm LALT SQT  &bhm LCTRL LPAR  &bhm LGUI RPAR  &kp COLON    &kp STAR  &bhm RGUI LBRC  &bhm RCTRL RBRC  &bhm RALT PLUS  &bhm RSHIFT TILDE
-            &none  &kp DLLR  &kp PIPE  &kp BSLH  &none        &kp EQUAL  &kp PRCNT  &kp AMPS  &kp CARET  &none
-            &none                                             &kp UNDER
+            &none  &kp HASH  &kp LBKT  &kp RBKT  &kp AT
+            &bhm LSHIFT DQT  &bhm LALT SQT  &bhm LCTRL LPAR  &bhm LGUI RPAR  &kp COLON
+            &none  &kp DLLR  &kp PIPE  &kp BSLH  &none
+            &none
+            &kp EXCL  &kp LT  &kp GT  &kp MINUS  &none
+            &kp STAR  &bhm RGUI LBRC  &bhm RCTRL RBRC  &bhm RALT PLUS  &bhm RSHIFT TILDE
+            &kp EQUAL  &kp PRCNT  &kp AMPS  &kp CARET  &none
+            &kp UNDER
             >;
         };
 
         numbers {
             bindings = <
-            &kp F13  &kp F11  &kp FSLH  &kp STAR  &kp N9                 &kp N8  &kp PLUS  &kp MINUS  &kp F12  &kp F14
-            &bhm LSHIFT N7  &bhm LALT N5  &bhm LCTRL N3  &bhm LGUI N1  &kp SLASH    &kp F8  &bhm RGUI N0  &bhm RCTRL N2  &bhm RALT N4  &bhm RSHIFT N6
-            &kp F7  &kp F5  &kp F3  &kp F1  &none                    &kp EQUAL  &kp F10  &kp F2  &kp F4 &kp F6
-            &none                                                &kp F15
+            &kp F13  &kp F11  &kp FSLH  &kp STAR  &kp N9
+            &bhm LSHIFT N7  &bhm LALT N5  &bhm LCTRL N3  &bhm LGUI N1  &kp SLASH
+            &kp F7  &kp F5  &kp F3  &kp F1  &none
+            &none
+            &kp N8  &kp PLUS  &kp MINUS  &kp F12  &kp F14
+            &kp F8  &bhm RGUI N0  &bhm RCTRL N2  &bhm RALT N4  &bhm RSHIFT N6
+            &kp EQUAL  &kp F10  &kp F2  &kp F4 &kp F6
+            &kp F15
             >;
         };
 
         system {
             bindings = <
-            &to ENG  &kp BSPC  &kp UP  &kp DEL  &kp PG_UP           &kp C_BRI_UP  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &to MOU1
-            &none  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN       &kp C_BRI_DN  &kp C_PREV  &kp C_NEXT  &kp C_PP  &none
-            &none  &kp CAPS  &kp HOME  &kp END  &kp RET           &none  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-            &none                                                &bt BT_CLR
+            &to ENG  &kp BSPC  &kp UP  &kp DEL  &kp PG_UP
+            &none  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN
+            &none  &kp CAPS  &kp HOME  &kp END  &kp RET
+            &none
+            &kp C_BRI_UP  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &to MOU1
+            &kp C_BRI_DN  &kp C_PREV  &kp C_NEXT  &kp C_PP  &none
+            &none  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+            &bt BT_CLR
             >;
         };
 
         mouse1 {
             bindings = <
-            &none  &none  &mmv MOVE_VERT(-200)  &none  &none                         &none  &none  &mwh MOVE_VERT(-5)  &none  &none
-            &to MOU1  &mmv MOVE_HOR(-200)  &mmv MOVE_VERT(200)  &mmv MOVE_HOR(200)  &none    &none  &mwh MOVE_HOR(-5)  &mwh MOVE_VERT(5)  &mwh MOVE_HOR(5)  &to MOU2
-            &none  &none  &none  &none  &mkp LCLK                            &mo SYS  &none  &none  &none  &none
-            &mkp RCLK                                                        &none
+            &none  &none  &mmv MOVE_VERT(-200)  &none  &none
+            &to MOU1  &mmv MOVE_HOR(-200)  &mmv MOVE_VERT(200)  &mmv MOVE_HOR(200)  &none
+            &none  &none  &none  &none  &mkp LCLK
+            &mkp RCLK
+            &none  &none  &mwh MOVE_VERT(-5)  &none  &none
+            &none  &mwh MOVE_HOR(-5)  &mwh MOVE_VERT(5)  &mwh MOVE_HOR(5)  &to MOU2
+            &mo SYS  &none  &none  &none  &none
+            &none
             >;
         };
 
         mouse2 {
             bindings = <
-            &none  &none  &mmv MOVE_VERT(-400)  &none  &none                         &none  &none  &mwh MOVE_VERT(-10)  &none  &none
-            &to MOU1  &mmv MOVE_HOR(-400)  &mmv MOVE_VERT(400)  &mmv MOVE_HOR(400)  &none    &none  &mwh MOVE_HOR(-10)  &mwh MOVE_VERT(10)  &mwh MOVE_HOR(10)  &to MOU2
-            &none  &none  &none  &none  &mkp LCLK                            &mo SYS  &none  &none  &none  &none
-            &mkp RCLK                                                        &none
+            &none  &none  &mmv MOVE_VERT(-400)  &none  &none
+            &to MOU1  &mmv MOVE_HOR(-400)  &mmv MOVE_VERT(400)  &mmv MOVE_HOR(400)  &none
+            &none  &none  &none  &none  &mkp LCLK
+            &mkp RCLK
+            &none  &none  &mwh MOVE_VERT(-10)  &none  &none
+            &none  &mwh MOVE_HOR(-10)  &mwh MOVE_VERT(10)  &mwh MOVE_HOR(10)  &to MOU2
+            &mo SYS  &none  &none  &none  &none
+            &none
             >;
         };
 
         mouse3 {
             bindings = <
-            &none  &none  &mmv MOVE_VERT(-600)  &none  &none                         &none  &none  &mwh MOVE_VERT(-20)  &none  &none
-            &to MOU1  &mmv MOVE_HOR(-600)  &mmv MOVE_VERT(600)  &mmv MOVE_HOR(600)  &none    &none  &mwh MOVE_HOR(-20)  &mwh MOVE_VERT(20)  &mwh MOVE_HOR(20)  &to MOU2
-            &none  &none  &none  &none  &mkp LCLK                            &mo SYS  &none  &none  &none  &none
-            &mkp RCLK                                                        &none
+            &none  &none  &mmv MOVE_VERT(-600)  &none  &none
+            &to MOU1  &mmv MOVE_HOR(-600)  &mmv MOVE_VERT(600)  &mmv MOVE_HOR(600)  &none
+            &none  &none  &none  &none  &mkp LCLK
+            &mkp RCLK
+            &none  &none  &mwh MOVE_VERT(-20)  &none  &none
+            &none  &mwh MOVE_HOR(-20)  &mwh MOVE_VERT(20)  &mwh MOVE_HOR(20)  &to MOU2
+            &mo SYS  &none  &none  &none  &none
+            &none
             >;
         };
 
