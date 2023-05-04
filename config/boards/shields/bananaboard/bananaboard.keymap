@@ -11,6 +11,15 @@
 #define MOU2 5
 #define MOU3 6
 
+&mmv {
+    acceleration-exponent = <0>;
+    delay-before-movement = <0>;
+}
+&mwh {
+    acceleration-exponent = <0>;
+    delay-before-movement = <0>;
+}
+
 / {
 
 // 0  1  2  3  4
@@ -22,7 +31,7 @@
 // 26 27 28 29 30
 //    31
 
-        combos {
+    combos {
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
