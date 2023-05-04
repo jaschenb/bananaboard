@@ -76,8 +76,26 @@
 
         mouse1 {
             bindings = <
-            &none  &none  &mmv MOVE_VERT(-200)  &none  &none                         &none  &none  &mwh MOVE_VERT(-10)  &none  &none
-            &none  &mmv MOVE_HOR(-200)  &mmv MOVE_VERT(200)  &mmv MOVE_HOR(200)  &none    &none  &mwh MOVE_HOR(-10)  &mwh MOVE_VERT(10)  &mwh MOVE_HOR(10)  &none
+            &none  &none  &mmv MOVE_VERT(-200)  &none  &none                         &none  &none  &mwh MOVE_VERT(-5)  &none  &none
+            &to MOU1  &mmv MOVE_HOR(-200)  &mmv MOVE_VERT(200)  &mmv MOVE_HOR(200)  &none    &none  &mwh MOVE_HOR(-5)  &mwh MOVE_VERT(5)  &mwh MOVE_HOR(5)  &to MOU2
+            &none  &none  &none  &none  &mkp LCLK                            &mo SYS  &none  &none  &none  &none
+            &mkp RCLK                                                        &none
+            >;
+        };
+
+        mouse2 {
+            bindings = <
+            &none  &none  &mmv MOVE_VERT(-400)  &none  &none                         &none  &none  &mwh MOVE_VERT(-10)  &none  &none
+            &to MOU1  &mmv MOVE_HOR(-400)  &mmv MOVE_VERT(400)  &mmv MOVE_HOR(400)  &none    &none  &mwh MOVE_HOR(-10)  &mwh MOVE_VERT(10)  &mwh MOVE_HOR(10)  &to MOU2
+            &none  &none  &none  &none  &mkp LCLK                            &mo SYS  &none  &none  &none  &none
+            &mkp RCLK                                                        &none
+            >;
+        };
+
+        mouse3 {
+            bindings = <
+            &none  &none  &mmv MOVE_VERT(-600)  &none  &none                         &none  &none  &mwh MOVE_VERT(-20)  &none  &none
+            &to MOU1  &mmv MOVE_HOR(-600)  &mmv MOVE_VERT(600)  &mmv MOVE_HOR(600)  &none    &none  &mwh MOVE_HOR(-20)  &mwh MOVE_VERT(20)  &mwh MOVE_HOR(20)  &to MOU2
             &none  &none  &none  &none  &mkp LCLK                            &mo SYS  &none  &none  &none  &none
             &mkp RCLK                                                        &none
             >;
