@@ -6,10 +6,10 @@
 #define ENG 0
 #define SYM 1
 #define NUM 2
-#define SYS 3
-#define MOU1 4
-#define MOU2 5
-#define MOU3 6
+#define MOU1 3
+#define MOU2 4
+#define MOU3 5
+#define SYS 6
 
 &mmv {
     acceleration-exponent = <0>;
@@ -103,19 +103,6 @@
             >;
         };
 
-        system {
-            bindings = <
-            &to ENG  &kp BSPC  &kp UP  &kp DEL  &kp PG_UP
-            &kp ESC  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN
-            &none  &kp CAPS  &kp HOME  &kp END  &kp RET
-            &none
-            &kp C_BRI_UP  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &to MOU1
-            &kp C_BRI_DN  &kp C_PREV  &kp C_NEXT  &kp C_PP  &none
-            &none  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-            &bt BT_CLR
-            >;
-        };
-
         mouse1 {
             bindings = <
             &none  &none  &mmv MOVE_VERT(-200)  &none  &none
@@ -152,6 +139,19 @@
             &none  &mwh MOVE_HOR(-20)  &mwh MOVE_VERT(20)  &mwh MOVE_HOR(20)  &to MOU2
             &mo SYS  &none  &none  &none  &none
             &none
+            >;
+        };
+
+        system {
+            bindings = <
+            &to ENG  &kp BSPC  &kp UP  &kp DEL  &kp PG_UP
+            &kp ESC  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN
+            &none  &kp CAPS  &kp HOME  &kp END  &kp RET
+            &none
+            &kp C_BRI_UP  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &to MOU1
+            &kp C_BRI_DN  &kp C_PREV  &kp C_NEXT  &kp C_PP  &none
+            &none  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+            &bt BT_CLR
             >;
         };
 
