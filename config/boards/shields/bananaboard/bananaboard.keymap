@@ -106,7 +106,7 @@
         system {
             bindings = <
             &to ENG  &kp BSPC  &kp UP  &kp DEL  &kp PG_UP
-            &none  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN
+            &kp ESC  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN
             &none  &kp CAPS  &kp HOME  &kp END  &kp RET
             &none
             &kp C_BRI_UP  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &to MOU1
