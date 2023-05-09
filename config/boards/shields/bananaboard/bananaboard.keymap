@@ -36,25 +36,25 @@
             key-positions = <5 6 7 8>;
             bindings = <&bt BT_CLR>;
         };
-        combo_btsel1 {
+        combo_btsel0 {
             timeout-ms = <50>;
             key-positions = <6 7 8>;
+            bindings = <&bt BT_SEL 0>;
+        };
+        combo_btsel1 {
+            timeout-ms = <50>;
+            key-positions = <5 6 7>;
             bindings = <&bt BT_SEL 1>;
         };
         combo_btsel2 {
             timeout-ms = <50>;
-            key-positions = <5 6 7>;
+            key-positions = <5 6 8>;
             bindings = <&bt BT_SEL 2>;
         };
         combo_btsel3 {
             timeout-ms = <50>;
-            key-positions = <5 6 8>;
-            bindings = <&bt BT_SEL 3>;
-        };
-        combo_btsel4 {
-            timeout-ms = <50>;
             key-positions = <5 7 8>;
-            bindings = <&bt BT_SEL 4>;
+            bindings = <&bt BT_SEL 3>;
         };
     };
 
@@ -87,7 +87,8 @@
             bindings = <
             &kp B  &kp Y  &kp O  &kp U  &kp SEMI
             &bhm LSHIFT C  &bhm LALT I  &bhm LCTRL E  &bhm LGUI A  &kp FSLH
-            &kp G  &kp X  &kp J  &kp K  &blt SYM SPC
+##            &kp G  &kp X  &kp J  &kp K  &blt SYM SPC
+            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3
             &bt BT_CLR
             &kp Z  &kp L  &kp D  &kp W  &kp V
             &kp Q  &bhm RGUI H  &bhm RCTRL T  &bhm RALT S  &bhm RSHIFT N
