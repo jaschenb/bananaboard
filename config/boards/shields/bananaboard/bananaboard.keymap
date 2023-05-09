@@ -86,7 +86,7 @@
         engram {
             bindings = <
             &kp B  &kp Y  &kp O  &kp U  &kp SEMI
-            &bhm LSHIFT C  &bhm LALT I  &bhm LCTRL E  &bhm LGUI A  &kp FSH
+            &bhm LSHIFT C  &bhm LALT I  &bhm LCTRL E  &bhm LGUI A  &kp FSLH
             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &blt SYM SPC
             // comment test
             &bt BT_CLR
