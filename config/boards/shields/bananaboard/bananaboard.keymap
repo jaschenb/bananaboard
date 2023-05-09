@@ -36,22 +36,22 @@
             key-positions = <5 6 7 8>;
             bindings = <&bt BT_CLR>;
         };
-        combo_btclr {
+        combo_btsel1 {
             timeout-ms = <50>;
             key-positions = <6 7 8>;
             bindings = <&bt BT_SEL 1>;
         };
-        combo_btclr {
+        combo_btsel2 {
             timeout-ms = <50>;
             key-positions = <5 6 7>;
             bindings = <&bt BT_SEL 2>;
         };
-        combo_btclr {
+        combo_btsel3 {
             timeout-ms = <50>;
             key-positions = <5 6 8>;
             bindings = <&bt BT_SEL 3>;
         };
-        combo_btclr {
+        combo_btsel4 {
             timeout-ms = <50>;
             key-positions = <5 7 8>;
             bindings = <&bt BT_SEL 4>;
