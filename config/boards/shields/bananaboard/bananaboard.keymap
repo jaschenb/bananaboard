@@ -34,7 +34,7 @@
         combo_btclr {
             timeout-ms = <50>;
             key-positions = <5 6 7 8>;
-            bindings = <&bt BT_CLR>;
+            bindings = <&kp q>;
         };
         combo_btsel0 {
             timeout-ms = <50>;
