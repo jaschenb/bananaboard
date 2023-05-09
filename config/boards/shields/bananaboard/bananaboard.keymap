@@ -88,7 +88,8 @@
             &kp B  &kp Y  &kp O  &kp U  &kp SEMI
             &bhm LSHIFT C  &bhm LALT I  &bhm LCTRL E  &bhm LGUI A  &kp FSLH
             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &blt SYM SPC
-            &blt NUM TAB
+            // &blt NUM TAB
+            &bt BT_CLR
             &kp Z  &kp L  &kp D  &kp W  &kp V
             &kp Q  &bhm RGUI H  &bhm RCTRL T  &bhm RALT S  &bhm RSHIFT N
             &blt SYS DOT  &kp R  &kp M  &kp F  &kp P
