@@ -34,7 +34,7 @@
         combo_btclr {
             timeout-ms = <50>;
             key-positions = <5 6 7 8>;
-            bindings = <&kp Q>;
+            bindings = <&bt BT_CLR>;
         };
         combo_btsel0 {
             timeout-ms = <50>;
@@ -87,9 +87,8 @@
             bindings = <
             &kp B  &kp Y  &kp O  &kp U  &kp SEMI
             &bhm LSHIFT C  &bhm LALT I  &bhm LCTRL E  &bhm LGUI A  &kp FSLH
-            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &blt SYM SPC
-            // &blt NUM TAB
-            &bt BT_CLR
+            &kp G  &kp X  &kp J  &kp K  &blt SYM SPC
+            &blt NUM TAB
             &kp Z  &kp L  &kp D  &kp W  &kp V
             &kp Q  &bhm RGUI H  &bhm RCTRL T  &bhm RALT S  &bhm RSHIFT N
             &blt SYS DOT  &kp R  &kp M  &kp F  &kp P
