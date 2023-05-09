@@ -31,10 +31,30 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_esc {
+        combo_btclr {
             timeout-ms = <50>;
-            key-positions = <5 6 7 8 9>;
+            key-positions = <5 6 7 8>;
             bindings = <&bt BT_CLR>;
+        };
+        combo_btclr {
+            timeout-ms = <50>;
+            key-positions = <6 7 8>;
+            bindings = <&bt BT_SEL 1>;
+        };
+        combo_btclr {
+            timeout-ms = <50>;
+            key-positions = <5 6 7>;
+            bindings = <&bt BT_SEL 2>;
+        };
+        combo_btclr {
+            timeout-ms = <50>;
+            key-positions = <5 6 8>;
+            bindings = <&bt BT_SEL 3>;
+        };
+        combo_btclr {
+            timeout-ms = <50>;
+            key-positions = <5 7 8>;
+            bindings = <&bt BT_SEL 4>;
         };
     };
 
@@ -149,8 +169,8 @@
             &none
             &kp C_BRI_UP  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &to MOU1
             &kp C_BRI_DN  &kp C_PREV  &kp C_NEXT  &kp C_PP  &none
-            &none  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-            &bt BT_CLR
+            &none  &none  &none  &none  &none
+            &none
             >;
         };
 
