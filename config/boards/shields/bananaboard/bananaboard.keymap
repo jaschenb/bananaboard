@@ -91,7 +91,7 @@
 
         engram {
             bindings = <
-            &kp B  &kp Y  &kp O  &kp U  &bhm LC(LS(LALT) SEMI
+            &kp B  &kp Y  &kp O  &kp U  &bhm LC(LS(LALT)) SEMI
             &bhm LSHIFT C  &bhm LALT I  &bhm LCTRL E  &bhm LGUI A  &kp FSLH
             &kp G  &kp X  &kp J  &kp K  &blt SYM SPC
             &blt NUM TAB
