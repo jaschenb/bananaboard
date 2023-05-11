@@ -91,7 +91,7 @@
 
         engram {
             bindings = <
-            &kp B  &kp Y  &kp O  &kp U  &bhm LG(LC(LALT) SEMI
+            &kp B  &kp Y  &kp O  &kp U  &bhm LG(LC(LALT)) SEMI
             &bhm LSHIFT C  &bhm LALT I  &bhm LCTRL E  &bhm LGUI A  &kp FSLH
             &kp G  &kp X  &kp J  &kp K  &blt SYM SPC
             &blt NUM TAB
@@ -104,7 +104,7 @@
 
         symbols {
             bindings = <
-            &none  &kp HASH  &kp LBKT  &kp RBKT  &bhm LG(LC(LALT) AT
+            &none  &kp HASH  &kp LBKT  &kp RBKT  &bhm LG(LC(LALT)) AT
             &bhm LSHIFT DQT  &bhm LALT SQT  &bhm LCTRL LPAR  &bhm LGUI RPAR  &kp COLON
             &none  &kp DLLR  &kp PIPE  &kp BSLH  &none
             &none
@@ -117,7 +117,7 @@
 
         numbers {
             bindings = <
-            &kp F13  &kp F11  &kp FSLH  &kp STAR  &bhm LG(LC(LALT) N9
+            &kp F13  &kp F11  &kp FSLH  &kp STAR  &bhm LG(LC(LALT)) N9
             &bhm LSHIFT N7  &bhm LALT N5  &bhm LCTRL N3  &bhm LGUI N1  &kp SLASH
             &kp F7  &kp F5  &kp F3  &kp F1  &none
             &none
@@ -169,7 +169,7 @@
 
         system {
             bindings = <
-            &to ENG  &kp BSPC  &kp UP  &kp DEL  &bhm LG(LC(LALT) PG_UP
+            &to ENG  &kp BSPC  &kp UP  &kp DEL  &bhm LG(LC(LALT)) PG_UP
             &bhm LSHIFT ESC  &bhm LALT LEFT  &bhm LCTRL DOWN  &bhm LGUI RIGHT  &kp PG_DN
             &none  &kp CAPS  &kp HOME  &kp END  &kp RET
             &none
