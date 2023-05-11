@@ -32,7 +32,7 @@
     combos {
         compatible = "zmk,combos";
         combo_ms3 {
-            timeout-ms = <100>;
+            timeout-ms = <200>;
             key-positions = <5 25>;
             bindings = <&to MOU3>;
             layers = <3 4 5>;
@@ -143,8 +143,8 @@
 
         mouse2 {
             bindings = <
-            &none  &none  &mmv MOVE_VERT(-600)  &none  &none
-            &to MOU1  &mmv MOVE_HOR(-600)  &mmv MOVE_VERT(600)  &mmv MOVE_HOR(600)  &none
+            &none  &none  &mmv MOVE_VERT(-1000)  &none  &none
+            &to MOU1  &mmv MOVE_HOR(-1000)  &mmv MOVE_VERT(1000)  &mmv MOVE_HOR(1000)  &none
             &none  &none  &none  &none  &mkp LCLK
             &mkp RCLK
             &none  &none  &mwh MOVE_VERT(-20)  &none  &none
@@ -156,8 +156,8 @@
 
         mouse3 {
             bindings = <
-            &none  &none  &mmv MOVE_VERT(-1000)  &none  &none
-            &to MOU1  &mmv MOVE_HOR(-1000)  &mmv MOVE_VERT(1000)  &mmv MOVE_HOR(1000)  &none
+            &none  &none  &mmv MOVE_VERT(-2000)  &none  &none
+            &to MOU1  &mmv MOVE_HOR(-2000)  &mmv MOVE_VERT(2000)  &mmv MOVE_HOR(2000)  &none
             &none  &none  &none  &none  &mkp LCLK
             &mkp RCLK
             &none  &none  &mwh MOVE_VERT(-50)  &none  &none
