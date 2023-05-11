@@ -31,12 +31,6 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_ms3 {
-            timeout-ms = <500>;
-            key-positions = <5 25>;
-            bindings = <&to MOU3>;
-            layers = <3 4 5>;
-        };
         combo_btclr {
             timeout-ms = <50>;
             key-positions = <5 6 7 8>;
