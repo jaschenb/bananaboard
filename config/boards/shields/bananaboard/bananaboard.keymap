@@ -130,7 +130,7 @@
 
         mouse1 {
             bindings = <
-            &none  &none  &mmv MOVE_VERT(-200)  &none  &none
+            &to ENG  &none  &mmv MOVE_VERT(-200)  &none  &none
             &to MOU1  &mmv MOVE_HOR(-200)  &mmv MOVE_VERT(200)  &mmv MOVE_HOR(200)  &none
             &none  &none  &none  &none  &mkp LCLK
             &mkp RCLK
@@ -143,7 +143,7 @@
 
         mouse2 {
             bindings = <
-            &none  &none  &mmv MOVE_VERT(-1000)  &none  &none
+            &to ENG  &none  &mmv MOVE_VERT(-1000)  &none  &none
             &to MOU1  &mmv MOVE_HOR(-1000)  &mmv MOVE_VERT(1000)  &mmv MOVE_HOR(1000)  &none
             &none  &none  &none  &none  &mkp LCLK
             &mkp RCLK
@@ -156,7 +156,7 @@
 
         mouse3 {
             bindings = <
-            &none  &none  &mmv MOVE_VERT(-3000)  &none  &none
+            &to ENG  &none  &mmv MOVE_VERT(-3000)  &none  &none
             &to MOU1  &mmv MOVE_HOR(-3000)  &mmv MOVE_VERT(3000)  &mmv MOVE_HOR(3000)  &none
             &none  &none  &none  &none  &mkp LCLK
             &mkp RCLK
