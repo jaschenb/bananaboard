@@ -165,7 +165,7 @@
             bindings = <
             &to ENG  &kp BSPC  &kp UP  &kp DEL  &bhm LG(LC(LALT)) PG_UP
             &bhm LSHIFT ESC  &bhm LALT LEFT  &bhm LCTRL DOWN  &bhm LGUI RIGHT  &kp PG_DN
-            &none  &kp CAPS  &kp HOME  &kp END  &kp RET
+            &kp CAPS  &caps_word  &kp HOME  &kp END  &kp RET
             &none
             &bhm RG(RC(RALT)) C_BRI_UP  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &to MOU2
             &kp C_BRI_DN  &bhm RGUI C_PREV  &bhm RCTRL C_NEXT  &bhm RALT C_PP  &kp RSHIFT
