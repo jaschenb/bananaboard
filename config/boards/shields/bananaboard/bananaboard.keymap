@@ -104,11 +104,11 @@
 
         symbols {
             bindings = <
-            &none  &kp HASH  &kp LBKT  &kp RBKT  &kp AT
+            &none  &kp HASH  &kp LBKT  &kp RBKT  &bhm LC(LS(LALT)) AT
             &bhm LSHIFT DQT  &bhm LALT SQT  &bhm LCTRL LPAR  &bhm LGUI RPAR  &kp COLON
             &none  &kp DLLR  &kp PIPE  &kp BSLH  &none
             &none
-            &kp EXCL  &kp LT  &kp GT  &kp MINUS  &none
+            &bhm RC(RS(RALT)) EXCL  &kp LT  &kp GT  &kp MINUS  &none
             &kp STAR  &bhm RGUI LBRC  &bhm RCTRL RBRC  &bhm RALT PLUS  &bhm RSHIFT TILDE
             &kp EQUAL  &kp PRCNT  &kp AMPS  &kp CARET  &none
             &kp UNDER
@@ -117,11 +117,11 @@
 
         numbers {
             bindings = <
-            &kp F13  &kp F11  &kp FSLH  &kp STAR  &kp N9
+            &kp F13  &kp F11  &kp FSLH  &kp STAR  &bhm LC(LS(LALT)) N9
             &bhm LSHIFT N7  &bhm LALT N5  &bhm LCTRL N3  &bhm LGUI N1  &kp SLASH
             &kp F7  &kp F5  &kp F3  &kp F1  &none
             &none
-            &kp N8  &kp PLUS  &kp MINUS  &kp F12  &kp F14
+            &bhm RC(RS(RALT)) N8  &kp PLUS  &kp MINUS  &kp F12  &kp F14
             &kp F8  &bhm RGUI N0  &bhm RCTRL N2  &bhm RALT N4  &bhm RSHIFT N6
             &kp EQUAL  &kp F10  &kp F2  &kp F4 &kp F6
             &kp F15
@@ -169,12 +169,12 @@
 
         system {
             bindings = <
-            &to ENG  &kp BSPC  &kp UP  &kp DEL  &kp PG_UP
-            &kp ESC  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN
+            &to ENG  &kp BSPC  &kp UP  &kp DEL  &bhm LC(LS(LALT)) PG_UP
+            &bhm LSHIFT ESC  &bhm LALT LEFT  &bhm LCTRL DOWN  &bhm LGUI RIGHT  &kp PG_DN
             &none  &kp CAPS  &kp HOME  &kp END  &kp RET
             &none
-            &kp C_BRI_UP  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &to MOU2
-            &kp C_BRI_DN  &kp C_PREV  &kp C_NEXT  &kp C_PP  &none
+            &bhm RC(RS(RALT)) C_BRI_UP  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &to MOU2
+            &kp C_BRI_DN  &bhm RGUI C_PREV  &bhm RCTRL C_NEXT  &bhm RALT C_PP  &kp RSHIFT
             &none  &none  &none  &none  &none
             &none
             >;
