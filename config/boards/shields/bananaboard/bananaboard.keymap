@@ -104,8 +104,8 @@
             &none
             &bhm RG(RC(RALT)) EXCL  &bhm RG(RCTRL) LT  &bhm RC(RALT) GT  &bhm RG(RALT) MINUS  &none
             &kp STAR  &bhm RGUI LBRC  &bhm RCTRL RBRC  &bhm RALT PLUS  &bhm RSHIFT TILDE
-            &kp EQUAL  &kp PRCNT  &kp AMPS  &kp CARET  &none
-            &kp UNDER
+            &kp UNDER  &kp PRCNT  &kp AMPS  &kp CARET  &none
+            &kp EQUAL
             >;
         };
 
@@ -117,8 +117,8 @@
             &none
             &bhm RG(RC(RALT)) N8  &bhm RG(RCTRL) PLUS  &bhm RC(RALT) MINUS  &bhm RG(RALT) F12  &kp F14
             &kp F8  &bhm RGUI N0  &bhm RCTRL N2  &bhm RALT N4  &bhm RSHIFT N6
-            &kp EQUAL  &kp F10  &kp F2  &kp F4 &kp F6
-            &kp F15
+            &kp F15  &kp F10  &kp F2  &kp F4 &kp F6
+            &kp EQUAL
             >;
         };
 
