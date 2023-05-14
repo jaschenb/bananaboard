@@ -87,12 +87,12 @@
             bindings = <
             &kp B  &bhm LG(LALT) Y  &bhm LC(LALT) O  &bhm LG(LCTRL) U  &bhm LG(LC(LALT)) SEMI
             &bhm LSHIFT C  &bhm LALT I  &bhm LCTRL E  &bhm LGUI A  &kp FSLH
-            &kp G  &kp X  &kp J  &kp K  &blt NUM TAB
-            &blt SYM SPC
+            &kp G  &kp X  &kp J  &kp K  &blt SYM SPC
+            &blt NUM TAB
             &bhm RG(RC(RALT)) Z  &bhm RG(RCTRL) L  &bhm RC(RALT) D  &bhm RG(RALT) W  &kp V
             &kp Q  &bhm RGUI H  &bhm RCTRL T  &bhm RALT S  &bhm RSHIFT N
-            &kp DOT  &kp R  &kp M  &kp F  &kp P
-            &blt SYS COMMA
+            &blt SYS DOT  &kp R  &kp M  &kp F  &kp P
+            &kp COMMA
             >;
         };
 
@@ -104,8 +104,8 @@
             &none
             &bhm RG(RC(RALT)) EXCL  &bhm RG(RCTRL) LT  &bhm RC(RALT) GT  &bhm RG(RALT) MINUS  &none
             &kp STAR  &bhm RGUI LBRC  &bhm RCTRL RBRC  &bhm RALT PLUS  &bhm RSHIFT TILDE
-            &kp UNDER  &kp PRCNT  &kp AMPS  &kp CARET  &none
-            &kp EQUAL
+            &kp EQUAL  &kp PRCNT  &kp AMPS  &kp CARET  &none
+            &kp UNDER
             >;
         };
 
@@ -117,8 +117,8 @@
             &none
             &bhm RG(RC(RALT)) N8  &bhm RG(RCTRL) PLUS  &bhm RC(RALT) MINUS  &bhm RG(RALT) F12  &kp F14
             &kp F8  &bhm RGUI N0  &bhm RCTRL N2  &bhm RALT N4  &bhm RSHIFT N6
-            &kp F15  &kp F10  &kp F2  &kp F4 &kp F6
-            &kp EQUAL
+            &kp EQUAL  &kp F10  &kp F2  &kp F4 &kp F6
+            &kp F15
             >;
         };
 
@@ -126,8 +126,8 @@
             bindings = <
             &to ENG  &none  &mmv MOVE_VERT(-200)  &none  &none
             &to MOU1  &mmv MOVE_HOR(-200)  &mmv MOVE_VERT(200)  &mmv MOVE_HOR(200)  &none
-            &none  &none  &none  &none  &mkp RCLK
-            &mkp LCLK
+            &none  &none  &none  &none  &mkp LCLK
+            &mkp RCLK
             &none  &none  &mwh MOVE_VERT(-10)  &none  &to MOU3
             &none  &mwh MOVE_HOR(-10)  &mwh MOVE_VERT(10)  &mwh MOVE_HOR(10)  &to MOU2
             &mo SYS  &none  &none  &none  &none
@@ -139,8 +139,8 @@
             bindings = <
             &to ENG  &none  &mmv MOVE_VERT(-1000)  &none  &none
             &to MOU1  &mmv MOVE_HOR(-1000)  &mmv MOVE_VERT(1000)  &mmv MOVE_HOR(1000)  &none
-            &none  &none  &none  &none  &mkp RCLK
-            &mkp LCLK
+            &none  &none  &none  &none  &mkp LCLK
+            &mkp RCLK
             &none  &none  &mwh MOVE_VERT(-15)  &none  &to MOU3
             &none  &mwh MOVE_HOR(-15)  &mwh MOVE_VERT(15)  &mwh MOVE_HOR(15)  &to MOU2
             &mo SYS  &none  &none  &none  &none
@@ -152,8 +152,8 @@
             bindings = <
             &to ENG  &none  &mmv MOVE_VERT(-3000)  &none  &none
             &to MOU1  &mmv MOVE_HOR(-3000)  &mmv MOVE_VERT(3000)  &mmv MOVE_HOR(3000)  &none
-            &none  &none  &none  &none  &mkp RCLK
-            &mkp LCLK
+            &none  &none  &none  &none  &mkp LCLK
+            &mkp RCLK
             &none  &none  &mwh MOVE_VERT(-50)  &none  &to MOU3
             &none  &mwh MOVE_HOR(-50)  &mwh MOVE_VERT(50)  &mwh MOVE_HOR(50)  &to MOU2
             &mo SYS  &none  &none  &none  &none
@@ -165,8 +165,8 @@
             bindings = <
             &to ENG  &bhm LG(LALT) BSPC  &bhm LC(LALT) UP  &bhm LG(LCTRL) DEL  &bhm LG(LC(LALT)) PG_UP
             &bhm LSHIFT ESC  &bhm LALT LEFT  &bhm LCTRL DOWN  &bhm LGUI RIGHT  &kp PG_DN
-            &kp CAPS  &caps_word  &kp HOME  &kp END  &kp TAB
-            &kp RET
+            &kp CAPS  &caps_word  &kp HOME  &kp END  &kp RET
+            &kp TAB
             &bhm RG(RC(RALT)) C_BRI_UP  &bhm RG(RCTRL) C_VOL_DN  &bhm RC(RALT) C_VOL_UP  &bhm RG(RALT) C_MUTE  &to MOU2
             &kp C_BRI_DN  &bhm RGUI C_PREV  &bhm RCTRL C_NEXT  &bhm RALT C_PP  &kp RSHIFT
             &none  &none  &none  &none  &none
