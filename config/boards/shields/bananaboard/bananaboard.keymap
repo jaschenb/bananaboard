@@ -87,12 +87,12 @@
             bindings = <
             &kp B  &bhm LG(LALT) Y  &bhm LC(LALT) O  &bhm LG(LCTRL) U  &bhm LG(LC(LALT)) SEMI
             &bhm LSHIFT C  &bhm LALT I  &bhm LCTRL E  &bhm LGUI A  &kp FSLH
-            &kp G  &kp X  &kp J  &kp K  &blt SYM SPC
-            &blt NUM TAB
+            &kp G  &kp X  &kp J  &kp K  &blt NUM TAB
+            &blt SYM SPC
             &bhm RG(RC(RALT)) Z  &bhm RG(RCTRL) L  &bhm RC(RALT) D  &bhm RG(RALT) W  &kp V
             &kp Q  &bhm RGUI H  &bhm RCTRL T  &bhm RALT S  &bhm RSHIFT N
-            &blt SYS DOT  &kp R  &kp M  &kp F  &kp P
-            &kp COMMA
+            &kp DOT  &kp R  &kp M  &kp F  &kp P
+            &blt SYS COMMA
             >;
         };
 
@@ -165,8 +165,8 @@
             bindings = <
             &to ENG  &bhm LG(LALT) BSPC  &bhm LC(LALT) UP  &bhm LG(LCTRL) DEL  &bhm LG(LC(LALT)) PG_UP
             &bhm LSHIFT ESC  &bhm LALT LEFT  &bhm LCTRL DOWN  &bhm LGUI RIGHT  &kp PG_DN
-            &kp CAPS  &caps_word  &kp HOME  &kp END  &kp RET
-            &none
+            &kp CAPS  &caps_word  &kp HOME  &kp END  &kp TAB
+            &kp RET
             &bhm RG(RC(RALT)) C_BRI_UP  &bhm RG(RCTRL) C_VOL_DN  &bhm RC(RALT) C_VOL_UP  &bhm RG(RALT) C_MUTE  &to MOU2
             &kp C_BRI_DN  &bhm RGUI C_PREV  &bhm RCTRL C_NEXT  &bhm RALT C_PP  &kp RSHIFT
             &none  &none  &none  &none  &none
