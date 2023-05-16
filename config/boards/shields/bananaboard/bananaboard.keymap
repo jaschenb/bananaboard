@@ -98,7 +98,7 @@
 
         symbols {
             bindings = <
-            &none  &bhm LG(LALT) HASH  &bhm LC(LALT) LBKT  &bhm LG(LCTRL) RBKT  &bhm LG(LC(LALT)) AT
+            &kp GRAVE  &bhm LG(LALT) HASH  &bhm LC(LALT) LBKT  &bhm LG(LCTRL) RBKT  &bhm LG(LC(LALT)) AT
             &bhm LSHIFT DQT  &bhm LALT SQT  &bhm LCTRL LPAR  &bhm LGUI RPAR  &kp COLON
             &none  &kp DLLR  &kp PIPE  &kp BSLH  &none
             &none
