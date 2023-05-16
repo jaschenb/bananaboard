@@ -112,7 +112,7 @@
         numbers {
             bindings = <
             &kp F13  &bhm LG(LALT) F11  &bhm LC(LALT) FSLH  &bhm LG(LCTRL) STAR  &bhm LG(LC(LALT)) N9
-            &bhm LSHIFT N7  &bhm LALT N5  &bhm LCTRL N3  &bhm LGUI N1  &kp SLASH
+            &bhm LSHIFT N7  &bhm LALT N5  &bhm LCTRL N3  &bhm LGUI N1  &kp F9
             &kp F7  &kp F5  &kp F3  &kp F1  &none
             &none
             &bhm RG(RC(RALT)) N8  &bhm RG(RCTRL) PLUS  &bhm RC(RALT) MINUS  &bhm RG(RALT) F12  &kp F14
