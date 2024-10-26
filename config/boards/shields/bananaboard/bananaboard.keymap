@@ -85,12 +85,12 @@
 
         engram {
             bindings = <
-            &kp B  &kp Y  &bhm LG(LC(LALT)) O  &bhm LS(LG(LC(LALT))) U  &kp SEMI
-            &bhm LSHIFT C  &bhm LALT I  &bhm LCTRL E  &bhm LGUI A  &kp FSLH
+            &kp B  &kp Y  &kp O  &kp U  &kp SEMI
+            &bhm LSHIFT C  &bhm LCTRL I  &bhm LGUI E  &bhm LALT A  &kp FSLH
             &kp G  &kp X  &kp J  &kp K  &blt SYM SPC
             &blt NUM TAB
-            &kp Z  &bhm RS(RG(RC(RALT))) L  &bhm RG(RC(RALT)) D  &kp W  &kp V
-            &kp Q  &bhm RGUI H  &bhm RCTRL T  &bhm RALT S  &bhm RSHIFT N
+            &kp Z  &kp L  &kp D  &kp W  &kp V
+            &kp Q  &bhm RALT H  &bhm RGUI T  &bhm RCTRL S  &bhm RSHIFT N
             &blt SYS DOT  &kp R  &kp M  &kp F  &kp P
             &kp COMMA
             >;
@@ -98,12 +98,12 @@
 
         symbols {
             bindings = <
-            &kp GRAVE  &kp HASH  &bhm LG(LC(LALT)) LBKT  &bhm LS(LG(LC(LALT))) RBKT  &kp AT
-            &bhm LSHIFT DQT  &bhm LALT SQT  &bhm LCTRL LPAR  &bhm LGUI RPAR  &kp COLON
+            &kp GRAVE  &kp HASH  &kp LBKT  &kp RBKT  &kp AT
+            &bhm LSHIFT DQT  &bhm LCTRL SQT  &bhm LGUI LPAR  &bhm LALT RPAR  &kp COLON
             &none  &kp DLLR  &kp PIPE  &kp BSLH  &none
             &none
-            &kp EXCL  &bhm RS(RG(RC(RALT))) LT  &bhm RG(RC(RALT)) GT  &kp MINUS  &none
-            &kp STAR  &bhm RGUI LBRC  &bhm RCTRL RBRC  &bhm RALT PLUS  &bhm RSHIFT TILDE
+            &kp EXCL  &kp LT  &kp GT  &kp MINUS  &none
+            &kp STAR  &bhm RALT LBRC  &bhm RGUI RBRC  &bhm RCTRL PLUS  &bhm RSHIFT TILDE
             &kp EQUAL  &kp PRCNT  &kp AMPS  &kp CARET  &none
             &kp UNDER
             >;
@@ -111,12 +111,12 @@
 
         numbers {
             bindings = <
-            &kp F13  &kp F11  &bhm LG(LC(LALT)) FSLH  &bhm LS(LG(LC(LALT))) STAR  &kp N9
-            &bhm LSHIFT N7  &bhm LALT N5  &bhm LCTRL N3  &bhm LGUI N1  &kp F9
+            &kp F13  &kp F11  &kp FSLH  &kp STAR  &kp N9
+            &bhm LSHIFT N7  &bhm LCTRL N5  &bhm LGUI N3  &bhm LALT N1  &kp F9
             &kp F7  &kp F5  &kp F3  &kp F1  &none
             &none
-            &kp N8  &bhm RS(RG(RC(RALT))) PLUS  &bhm RG(RC(RALT)) MINUS  &kp F12  &kp F14
-            &kp F8  &bhm RGUI N0  &bhm RCTRL N2  &bhm RALT N4  &bhm RSHIFT N6
+            &kp N8  &kp PLUS  &kp MINUS  &kp F12  &kp F14
+            &kp F8  &bhm RALT N0  &bhm RGUI N2  &bhm RCTRL N4  &bhm RSHIFT N6
             &kp EQUAL  &kp F10  &kp F2  &kp F4 &kp F6
             &kp F15
             >;
@@ -163,12 +163,12 @@
 
         system {
             bindings = <
-            &to ENG  &kp BSPC  &bhm LG(LC(LALT)) UP  &bhm LS(LG(LC(LALT))) DEL  &kp PG_UP
-            &bhm LSHIFT ESC  &bhm LALT LEFT  &bhm LCTRL DOWN  &bhm LGUI RIGHT  &kp PG_DN
+            &to ENG  &kp BSPC  &kp UP  &kp DEL  &kp PG_UP
+            &bhm LSHIFT ESC  &bhm LCTRL LEFT  &bhm LGUI DOWN  &bhm LALT RIGHT  &kp PG_DN
             &kp CAPS  &caps_word  &kp HOME  &kp END  &kp RET
             &kp TAB
-            &kp C_BRI_UP  &bhm RS(RG(RC(RALT))) C_VOL_DN  &bhm RG(RC(RALT)) C_VOL_UP  &kp C_MUTE  &to MOU2
-            &kp C_BRI_DN  &bhm RGUI C_PREV  &bhm RCTRL C_NEXT  &bhm RALT C_PP  &kp RSHIFT
+            &kp C_BRI_UP  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &to MOU2
+            &kp C_BRI_DN  &bhm RALT C_PREV  &bhm RGUI C_NEXT  &bhm RCTRL C_PP  &kp RSHIFT
             &none  &none  &none  &none  &none
             &none
             >;
